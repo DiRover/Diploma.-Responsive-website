@@ -41,12 +41,19 @@ span {
     position: relative;
 }
 
+/*.picture {*/
+    /*font-size: 0;*/
+    /*height: 0;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
 @media (max-width: 640px) {
     .preview {
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding: 33px 0 84px 0;
+        padding: 4.5% 0 26.25% 0;
         background-image: url("../img/football_767.jpg");
         background-repeat: no-repeat;
         background-position: center center;
@@ -78,15 +85,25 @@ span {
     }
 
     .title {
-        margin: 43vmin 0 0 6.25vmin;
+        margin: 43vmin 0 0 6.25%;
         color: #ffffff;
         text-transform: uppercase;
         font-family: "Open Sans Bold";
-        font-size: 1.75rem;
+        font-size: 8.75vw;
+    }
+
+    .title-first-line {
+        margin: 0 0 2rem 0;
+        padding: 0;
     }
 
     .title-second-line {
-        margin: 31px 0 0 44px;
+        margin: 0 0 0 44px;
+        padding: 0;
+    }
+
+    .title-third-line {
+        margin: 0 0 0 44px;
         padding: 0;
     }
 
@@ -100,7 +117,7 @@ span {
         align-items: center;
         text-transform: uppercase;
         font-family: "Open Sans";
-        font-size: 0.5rem;
+        font-size: 2.5vw;
         color: #ffffff;
         background-color: #5e42b0;
         box-sizing: border-box;
@@ -120,7 +137,7 @@ span {
         align-items: center;
         text-transform: uppercase;
         font-family: "Open Sans";
-        font-size: 0.5rem;
+        font-size: 2.5vw;
         color: #ffffff;
         background-color: #5e42b0;
         box-sizing: border-box;
@@ -137,7 +154,7 @@ span {
     .button-app_store_text {
         text-align: left;
         box-sizing: border-box;
-        width: 83px;
+        width: 26vw;
         margin: 0 0 0 9px;
         padding: 0;
     }
@@ -145,7 +162,7 @@ span {
     .button-google_play_text {
         text-align: left;
         box-sizing: border-box;
-        width: 56px;
+        width: 17.5vw;
         margin: 0 0 0 9px;
         padding: 0;
     }
@@ -171,11 +188,19 @@ span {
         padding: 0;
     }
 
+
+
+    .article-container {
+        display: flex;
+        justify-content: center;
+
+    }
+
     .athlets-img {
         position: absolute;
-        width: 100%;
-        left: 50%;
-
+        margin-left: auto;
+        margin-right: auto;
+        width: 57%;
     }
 
     .article-connection {
@@ -247,6 +272,11 @@ span {
         color: #ffffff;
     }
 
+    .card-header-players {
+        background-color: #ffffff;
+        padding-bottom: 70%;
+    }
+
     .players-img {
         position: absolute;
         width: 93.75%;
@@ -287,32 +317,20 @@ span {
 
     .advice {
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-top: 110%;
-
     }
 
-    .active {
-        background-image: url("../img/be-active_640.jpg");
+    .advice-img {
+        width: 100vw;
+        font-size: 0;
     }
 
-    .contact {
-        background-image: url("../img/find-contact_640.jpg");
-    }
-
-    .work {
-        background-image: url("../img/work-it_640.jpg");
-    }
-
-    .frame-number {
+    .frame-number, .frame-number-contact {
         display: flex;
         position: absolute;
         z-index: 2;
-        width: 22%;
-        height: 4.375em; /*хотел задать в %, но height вычисляется от height картинки, я не понимаю почему*/
-        top: calc(100% - 3.625rem);
+        width: 21.875vw;
+        height: 21.875vw;
+        top: calc(100% - 18.125vw);
         left: 0;
         background-color: #5e42b0;
         margin: 0 0 0 6.25%;
@@ -321,7 +339,7 @@ span {
     .advice-number {
         margin: auto;
         font-family: "Open Sans Bold";
-        font-size: 0.875rem;
+        font-size: 4.375vw;
         color: #f5f6f7;
     }
 
@@ -336,7 +354,7 @@ span {
 
     .advice-header {
         font-family: "Open Sans Bold";
-        font-size: 1.75rem;
+        font-size: 8.75vw;
         color: #e7e7e7;
         text-transform: uppercase;
         margin: 10% 0 0 6.25%;
@@ -380,11 +398,12 @@ span {
         align-items: center;
         position: relative;
         z-index: 1;
-        width: 22.5%;
-        height: 4.5rem; /*опять хотел задать в %, но не сработало*/
+        width: 22.5vw;
+        height: 22.5vw;
         padding: 0;
         background: linear-gradient(#7755d7, #50379a);
-        border-radius: 15px;
+        border-radius: 25%;
+        margin: 0 auto 0 auto;
     }
 
     .button {

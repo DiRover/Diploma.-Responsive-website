@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,0">
     <link href="css/320_css.css" rel="stylesheet">
     <link href="css/640_css.css" rel="stylesheet">
+    <link href="css/960_css.css" rel="stylesheet">
     <title>Diploma</title>
 </head>
 <body>
@@ -24,7 +25,10 @@
         </div>
         <h1 class="title">
             <p class="title-first-line">be recuited</p>
-            <p class="title-second-line">play college<br>sports</p>
+            <div class="title-container">
+            <p class="title-second-line">play college</p>
+            <p class="title-third-line">sports</p>
+            </div>
         </h1>
         <div class="app">
             <a href="https://www.apple.com/ru/ios/app-store/" class="link-store">
@@ -50,19 +54,21 @@
     </header>
     <main class="page">
         <article class="athlets">
-            <div class="article-container card-header">
+            <div class="card-header">
                   <h2 class="article-header">athlets</h2>
-                <picture class="athlets-img">
-                    <source media="(max-width: 640px)" srcset="img/footballer_192.png">
-                    <source media="(min-width: 641px) and (max-width: 960px)" srcset="img/footballer_497.png">
-                    <source media="(max-width: 961px) and (max-width: 1290px)" srcset="img/footballer_566.png">
-                    <source srcset="surface_320.jpg" media="all">
-                    <img src="img/footballer_192.png"  alt="football player">
-                </picture>
+                        <div class="container">
+                             <picture class="article-container">
+                                 <source class="athlets-img" media="(max-width: 640px)" srcset="img/footballer_192.png">
+                                 <source class="athlets-img" media="(min-width: 641px) and (max-width: 960px)" srcset="img/footballer_497.png">
+                                 <source class="athlets-img" media="(min-width: 961px)" srcset="img/footballer_566.png">
+                                 <source class="athlets-img" srcset="surface_320.jpg" media="all">
+                                 <img class="athlets-img" src="img/footballer_497.png"  alt="football player">
+                             </picture>
+                        </div>
             </div>
             <div class="article-connection">
                 <h3 class="post-header"><span class="post-number">01</span><span class="post-text">connection</span></h3>
-                <p class="post-content">Connect with coaches directly, you can ping coaches to view pro</p>
+                <p class="post-content">Connect with coaches directly, you can ping coaches to view profile</p>
             </div>
             <div class="article-collaboration">
                 <h3 class="post-header"><span class="post-number">02</span><span class="post-text">collaboration</span></h3>
@@ -79,14 +85,16 @@
             </div>
         </article>
         <article class="players">
-            <div class="article-container card-header">
+            <div class="card-header-players">
                 <h2 class="article-header players-header">players</h2>
-                <picture class="players-img">
-                    <source media="(max-width: 640px)" srcset="img/basketballer_302.png">
-                    <source media="(min-width: 641px) and (max-width: 960px)" srcset="img/basketballer_436.png">
-                    <source media="(max-width: 961px) and (max-width: 1290px)" srcset="img/basketballer_991.png">
-                    <img src="img/basketballer_436.png" alt="basketballer">
-                </picture>
+                    <div class="container">
+                         <picture class="article-container">
+                            <source  class="players-img" media="(max-width: 640px)" srcset="img/basketballer_302.png">
+                            <source class="players-img" media="(min-width: 641px) and (max-width: 960px)" srcset="img/basketballer_436.png">
+                            <source class="players-img" media="(min-width: 961px)" srcset="img/basketballer_991.png">
+                            <img class="players-img" src="img/basketballer_436.png" alt="basketballer">
+                         </picture>
+                    </div>
             </div>
             <div class="article-connection article-connection-players">
                 <h3 class="post-header"><span class="post-number">01</span><span class="post-text">connection</span></h3>
@@ -102,46 +110,73 @@
                 <p class="post-content-players">Save your time, recruit proper athlets for your team.</p>
             </div>
         </article>
-        <article class="card">
+        <article class="card-advices">
             <div class="advice active">
+                <picture>
+                    <source  class="advice-img" media="(max-width: 640px)" srcset="img/be-active_640.jpg">
+                    <source class="advice-img" media="(min-width: 641px) and (max-width: 960px)" srcset="img/be-active.jpg">
+                    <source class="advice-img" media="(min-width: 961px)" srcset="img/be-active_960.jpg">
+                    <img class="advice-img" src="img/be-active.jpg" alt="Be active">
+                </picture>
                 <div class="frame-number">
                     <p class="advice-number">01</p>
                 </div>
             </div>
-            <h2 class="advice-header">Be active</h2>
-            <p class="post-content-advice">Post videos with your skills, Like and follow others to be  more popular.</p>
+            <div class="advice-content">
+                <h2 class="advice-header">Be active</h2>
+                <p class="post-content-advice">Post videos with your skills, Like and follow others to be  more popular.</p>
+            </div>
             <div class="advice contact">
-                <div class="frame-number">
+                <picture>
+                    <source  class="advice-img" media="(max-width: 640px)" srcset="img/find-contact_640.jpg">
+                    <source class="advice-img" media="(min-width: 641px) and (max-width: 960px)" srcset="img/find-contact.jpg">
+                    <source class="advice-img" media="(min-width: 961px)" srcset="img/find-contact_960.jpg">
+                    <img class="advice-img" src="img/find-contact.jpg" alt="find contact">
+                </picture>
+                <div class="frame-number-contact">
                     <p class="advice-number">02</p>
                 </div>
             </div>
-            <h2 class="advice-header">fine contact</h2>
-            <p class="post-content-advice">Contact others to find right coach or athlete you are looking for.</p>
+            <div class="advice-content contact-content">
+                <h2 class="advice-header">find contact</h2>
+                <p class="post-content-advice">Contact others to find right coach or athlete you are looking for.</p>
+            </div>
             <div class="advice work">
+                <picture>
+                    <source  class="advice-img" media="(max-width: 640px)" srcset="img/work-it_640.jpg">
+                    <source class="advice-img" media="(min-width: 641px) and (max-width: 960px)" srcset="img/work-it.jpg">
+                    <source class="advice-img" media="(min-width: 961px)" srcset="img/work-it_960.jpg">
+                    <img class="advice-img" src="img/work-it.jpg" alt="work it">
+                </picture>
                 <div class="frame-number">
                     <p class="advice-number">03</p>
                 </div>
             </div>
-            <h2 class="advice-header">work it</h2>
-            <p class="post-content-advice">Enjoy being a student athlete, the recruiting process can be overwhelming,
+            <div class="advice-content work-content">
+                <h2 class="advice-header">work it</h2>
+                <p class="post-content-advice">Enjoy being a student athlete, the recruiting process can be overwhelming,
                we want to make this enjoyable experience.</p>
+            </div>
         </article>
     </main>
     <footer class="footer">
-        <div class="footer-button">
-            <a class="footer-button-link" href="#preview-logo-img">
-                <svg class="button" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
-                    <g fill-rule="evenodd">
-                        <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
-                        <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                </svg>
-
-            </a>
+        <div class="footer-title-container">
+                <div class="footer-button">
+                    <a class="footer-button-link" href="#preview-logo-img">
+                        <svg class="button" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
+                            <g fill-rule="evenodd">
+                                <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
+                                <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            <div class="footer-title-content">
+                        <h1 class="footer-title">download app</h1>
+                        <p class="footer-text">Show everyone what you can do!</p>
+            </div>
         </div>
-        <h1 class="footer-title">download app</h1>
-        <p class="footer-text">Show everyone what you can do!</p>
-        <div class="app">
+        <div class="app footer-app">
             <a href="https://www.apple.com/ru/ios/app-store/" class="link-store">
                 <div class="app_store">
                     <svg class="button-svg button-svg-app_store" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
