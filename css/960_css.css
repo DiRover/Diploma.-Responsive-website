@@ -52,6 +52,10 @@
         margin: 0 0 0 22%;
     }
 
+    .title-container {
+        display: block;
+    }
+
     .title-second-line {
         margin: 0;
         padding: 0;
@@ -251,7 +255,7 @@
 
     .post-number-players {
         font-family: "Open Sans Bold";
-        font-size: 1.125rem;
+        font-size: 1vw;
         color: #8765dd;
         margin-right: 0.8em;
         align-self: center;
@@ -268,14 +272,18 @@
 
     .post-content-players {
         font-family: "Open Sans";
-        font-size: 1rem;
+        font-size: 1.1vw;
         color: #ffffff;
         margin: 6% 0 8% 0;
     }
 
     .card-advices {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .post-advice {
+        display: flex;
     }
 
     .advice, active {
@@ -413,6 +421,11 @@
         border-radius: 30%;
     }
 
+    .footer-title-content {
+        margin-left: 5%;
+        box-sizing: border-box;
+    }
+
     .button {
         display: block;
         fill: #ffffff;
@@ -430,6 +443,7 @@
         font-size: 4vw;
         position: relative;
         z-index: 1;
+        line-height: 1em;
     }
 
     .footer-text {
@@ -440,6 +454,7 @@
         position: relative;
         z-index: 1;
         margin: 0;
+        line-height: 1em;
     }
 
     .footer-app {

@@ -41,12 +41,9 @@ span {
     position: relative;
 }
 
-/*.picture {*/
-    /*font-size: 0;*/
-    /*height: 0;*/
-    /*padding: 0;*/
-    /*margin: 0;*/
-/*}*/
+picture {
+    font-size: 0;
+}
 
 @media (max-width: 640px) {
     .preview {
@@ -97,6 +94,10 @@ span {
         padding: 0;
     }
 
+    .title-container {
+        display: block;
+    }
+
     .title-second-line {
         margin: 0 0 0 44px;
         padding: 0;
@@ -107,9 +108,15 @@ span {
         padding: 0;
     }
 
+
     .app {
         width: 100%; /*пришлось задать ширину, так как блоки .app_store и .google_play
          почему-то не растягиваются на всю ширину родителя .footer при этом растягиваются на всю ширину блока-родителя .preview*/
+    }
+
+    .link-app {
+        display: block;
+        margin-top: 5.625rem;
     }
 
     .app_store {
@@ -125,11 +132,16 @@ span {
         height: 4.5em;
         border-radius: 6.25rem;
         border: none;
-        margin-top: 5.625rem;
+        margin-top: 0;
         margin-right: auto;
         margin-left: auto;
         padding: 0 0 0 25%;;
 
+    }
+
+    .link-gp {
+        display: block;
+        margin-top: 1.25rem;
     }
 
     .google_play {
@@ -207,13 +219,13 @@ span {
         display: flex;
         flex-direction: column;
         background-color: #fafafa;
-        padding-top: 26.25%;
+        padding: 26.25% 6.25% 17% 6.25%;
 
     }
 
     .post-header {
         display: flex;
-        margin: 0 0 0 6.25%;
+        margin: 0;
         padding: 0;
         font-family: "Open Sans Bold";
         font-size: 1.5rem;
@@ -238,25 +250,26 @@ span {
         margin: 0;
     }
 
+
     .post-content {
         font-family: "Open Sans";
         font-size: 1rem;
         color: #000000;
-        margin: 8.5% 6.25% 17% 6.25%;
+        margin: 8.5% 0 0 0;
     }
 
     .article-collaboration {
         background-color: #f5f4f9;
         display: flex;
         flex-direction: column;
-        padding: 19% 0 0 0;
+        padding: 19% 6.25% 17% 6.25%;
     }
 
     .article-growth {
         background-color: #5e42b0;
         display: flex;
         flex-direction: column;
-        padding: 19% 0 0 0;
+        padding: 19% 6.25% 17% 6.25%;
     }
 
     .post-number-growth:after {
@@ -288,7 +301,7 @@ span {
         background-color: #090c35;
         display: flex;
         flex-direction: column;
-        padding: 19% 0 0 0;
+        padding: 19% 6.25% 17% 6.25%;
     }
 
     .post-number-players {
@@ -312,11 +325,12 @@ span {
         font-family: "Open Sans";
         font-size: 1rem;
         color: #ffffff;
-        margin: 8.5% 6.25% 17% 6.25%;
+        margin: 8.5% 0 0 0;
     }
 
     .advice {
         position: relative;
+        font-size: 0;
     }
 
     .advice-img {
@@ -394,7 +408,6 @@ span {
 
     .footer-button {
         display: flex;
-        /*justify-content: center; !*не понял почему не требуется*!*/
         align-items: center;
         position: relative;
         z-index: 1;
@@ -423,6 +436,12 @@ span {
         font-size: 1.75rem;
         position: relative;
         z-index: 1;
+    }
+
+    .footer-title-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-text {
