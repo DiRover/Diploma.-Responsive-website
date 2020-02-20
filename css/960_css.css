@@ -419,11 +419,7 @@
         padding: 0;
         background: linear-gradient(#7755d7, #50379a);
         border-radius: 30%;
-    }
-
-    .footer-title-content {
-        margin-left: 5%;
-        box-sizing: border-box;
+        flex-shrink: 0;
     }
 
     .button {
@@ -434,6 +430,12 @@
         z-index: 1;
         margin: auto;
     }
+
+    .footer-title-content {
+        margin-left: 5%;
+        flex-shrink: 0;
+    }
+
 
     .footer-title {
         margin: 0 auto 0 auto;
